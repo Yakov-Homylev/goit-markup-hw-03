@@ -275,6 +275,8 @@ ul {
   font-style: normal;
 }
 .footer-section .address-head {
+  margin-top: 20px;
+
   color: var(--primary-white-color);
   font-style: normal;
 }
