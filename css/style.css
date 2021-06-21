@@ -38,6 +38,11 @@ ul {
   /* outline: 2px solid tomato; */
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -48,7 +53,7 @@ ul {
 }
 
 .photo {
-  display: inline-block;
+  display: block;
 }
 .hiden {
   visibility: hidden;
@@ -130,11 +135,6 @@ ul {
 }
 
 /* Hero */
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .hero {
   background-color: var(--third-background-color);
@@ -333,12 +333,11 @@ ul {
   flex-basis: calc(100% / 30 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-
-  outline: 1px solid #eeeeee;
 }
 
 .projects-section {
-  margin: 20px 24px 20px 24px;
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .name-projects {
