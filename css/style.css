@@ -55,9 +55,20 @@ ul {
 .photo {
   display: block;
 }
-.hiden {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
 /* Header */
 .page-header {
   padding-top: 24px;
@@ -289,6 +300,8 @@ ul {
 }
 
 .footer-logo {
+  margin-right: 0px;
+
   color: var(--primary-white-color);
 }
 /* Portfolio */
@@ -296,16 +309,12 @@ ul {
 .filter {
   display: flex;
   margin-bottom: 34px;
+  justify-content: center;
 }
-.filter-item {
+.filter-item:not(:last-child) {
   margin-right: 8px;
 }
-.filter-item:first-child {
-  margin-left: auto;
-}
-.filter-item:last-child {
-  margin-right: auto;
-}
+
 .button-portfolio {
   color: var(--secondary-text-color);
   background-color: var(--secondary-bacground-color);
